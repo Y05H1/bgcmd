@@ -1,0 +1,4 @@
+#command,console log,pid file
+tail -f /var/log/messages,${DATE}_messages.log,messages.pid
+tail -f /var/log/httpd/access_log,${DATE}_http_access.log,http_access.pid
+tcpdump -s 1500 -w ${DIR}/${DATE}_tcpdump.pcap,${DATE}_tcpdump.log,tcpdump.pid
